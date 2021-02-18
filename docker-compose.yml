@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  hello:
+    image: golang:1.15-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
